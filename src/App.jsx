@@ -1,5 +1,6 @@
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './pages/Home'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route index  element = {} />
+          <Route index  element = {<Home />} />
         </Routes>
       </BrowserRouter>
     </>
