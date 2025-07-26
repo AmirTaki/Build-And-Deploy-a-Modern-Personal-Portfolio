@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const StartBackground = () => {
     const [stars, setStars] = useState([])
+    const [meteors, setMeteors]  = useState()
     useEffect(()=>{
         generateStarts()
     },[])
@@ -20,16 +21,15 @@ const StartBackground = () => {
         }
 
         setStars(newStars)
-        
     }
     return(
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
             {stars.map((star) => (
                 <div key = {star.id} className="star animate-pulse-subtle" style={{
-                    widht:`${star.size}px`,
+                    width:`${star.size}px`,
                     height: `${star.size}px`,
-                    left: `${star.x}px`,
-                    top: `${star.y}px`,
+                    left: `${star.x}%`,
+                    top: `${star.y}%`,
                     opacity: `${star.opacity}`,
                     animationDuration : `${star.animationDuration}s`
                 }}></div>

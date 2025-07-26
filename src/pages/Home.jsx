@@ -7,7 +7,6 @@ const Home = () => {
             <ThemeToggle />
             {/* Background Effects */}
             <StartBackground />
-
             {/* Navbar */}
             {/* Main Content */}
             {/* Footer */}
