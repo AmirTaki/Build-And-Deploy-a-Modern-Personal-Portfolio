@@ -23,9 +23,18 @@ const StartBackground = () => {
         
     }
     return(
-        <>
-        
-        </>
+        <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+            {stars.map((star) => (
+                <div key = {star.id} className="star animate-pulse-subtle" style={{
+                    widht:`${star.size}px`,
+                    height: `${star.size}px`,
+                    left: `${star.x}px`,
+                    top: `${star.y}px`,
+                    opacity: `${star.opacity}`,
+                    animationDuration : `${star.animationDuration}s`
+                }}></div>
+            ))}
+        </div>
     )
 }
 export default StartBackground;
