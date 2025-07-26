@@ -2,10 +2,16 @@ import { useEffect, useState } from "react";
 
 const StartBackground = () => {
     const [stars, setStars] = useState([])
-    const [meteors, setMeteors]  = useState(1)
+    const [meteors, setMeteors]  = useState([])
     useEffect(()=>{
         generateStarts()
         generateMeteors()
+
+        const handleResize = () => {
+            generateStarts()
+        }
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
     },[])
     const generateStarts = () =>{
         const numberOfStars = Math.floor(window.innerWidth * window.innerHeight / 10000)
