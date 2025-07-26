@@ -5,11 +5,17 @@ import { useState } from "react"
 export const ThemeToggle = () =>{
     const[isDarkMode, setIsDarkMode] = useState(false)
     const toggleTheme = () => {
-      setIsDarkMode(isDarkMode ? false : true)
+    //   setIsDarkMode(isDarkMode ? false : true)
+    if(isDarkMode){
+        setIsDarkMode(false)
+    } 
+    else {
+        setIsDarkMode(true)
+    }
     }
     return(
         <>
-          <button>
+          <button onClick={toggleTheme}>
             {isDarkMode ? (
                 <Sun className="h-6 w-6 text-yellow-300" /> ):( 
                 <Moon className="h-6 w-6 text-blue-900"/>
