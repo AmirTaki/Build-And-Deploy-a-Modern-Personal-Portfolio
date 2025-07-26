@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const StartBackground = () => {
     const [stars, setStars] = useState([])
-    const [meteors, setMeteors]  = useState()
+    const [meteors, setMeteors]  = useState(1)
     useEffect(()=>{
         generateStarts()
         generateMeteors()
@@ -49,6 +49,16 @@ const StartBackground = () => {
                     top: `${star.y}%`,
                     opacity: `${star.opacity}`,
                     animationDuration : `${star.animationDuration}s`
+                }}></div>
+            ))}
+            {meteors.map((meteor) => (
+                <div key = {meteor.id} className="meteor animate-meteor" style={{
+                    width:`${meteor.size * 50}px`,
+                    height: `${meteor.size * 2}px`,
+                    left: `${meteor.x}%`,
+                    top: `${meteor.y}%`,
+                    animationDelay: `${meteor.delay}`,
+                    animationDuration : `${meteor.animationDuration}s`
                 }}></div>
             ))}
         </div>
