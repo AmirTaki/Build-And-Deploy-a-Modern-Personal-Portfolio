@@ -9,10 +9,13 @@ export const ThemeToggle = () =>{
     if(isDarkMode){
         setIsDarkMode(false)
         document.documentElement.classList.remove("dark")
+        localStorage.setItem("theme", "light")
+
     } 
     else {
         setIsDarkMode(true)
         document.documentElement.classList.add("dark")
+        localStorage.setItem("theme", "dark")
 
     }
     }
