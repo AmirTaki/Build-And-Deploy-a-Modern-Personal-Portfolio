@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { cn } from "../lib/utils"
 
 const navItems = [
@@ -8,6 +9,12 @@ const navItems = [
     {name : "Contact", href :"#contact"}
 ]
 const Navbar = () => {
+    const[isScrolled, setIsScrolled] = useState(false)
+    useEffect(()=>{
+        const handleScroll = () =>{
+            
+        }
+    })
     return(
         <nav className={cn("fixed w-full z-10 transition-all duration-300",)}>
 
