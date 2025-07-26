@@ -18,7 +18,9 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll)
     })
     return(
-        <nav className={cn("fixed w-full z-10 transition-all duration-300",)}>
+        <nav className={cn("fixed w-full z-10 transition-all duration-300",
+            isScrolled ? "py-3 bg-background/80 backrop-blur-md shadow-xs" : "py-5"
+        )}>
 
         </nav>
     )
