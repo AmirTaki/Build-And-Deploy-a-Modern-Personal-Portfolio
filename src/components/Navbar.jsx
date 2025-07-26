@@ -24,7 +24,7 @@ const Navbar = () => {
             <div className="container flex  items-center justify-between">
                 <a href="">
                     <span>
-                        <span className=""> PedroTech</span> 
+                        <span className="text-glow"> PedroTech</span> Portfolio
                     </span>
                 </a>
             </div>
