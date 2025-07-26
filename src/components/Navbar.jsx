@@ -12,8 +12,10 @@ const Navbar = () => {
     const[isScrolled, setIsScrolled] = useState(false)
     useEffect(()=>{
         const handleScroll = () =>{
-            
+            setIsScrolled(window.screenY > 10)
         }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll)
     })
     return(
         <nav className={cn("fixed w-full z-10 transition-all duration-300",)}>
