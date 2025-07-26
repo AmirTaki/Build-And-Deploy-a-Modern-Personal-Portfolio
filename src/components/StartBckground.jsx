@@ -25,6 +25,17 @@ const StartBackground = () => {
      const generateMeteors  = () =>{
         const numberOfMeteors = 4
         const newMeteors =   []
+        for(let i = 0; i < numberOfMeteors ; i ++){
+            newStars.push({
+                id:i,
+                size : Math.random() * 2 + 1,
+                x : Math.random() * 100,
+                y: Math.random() * 20,
+                delay : Math.random() * 15,
+                animationDuration : Math.random() * 3 + 3,
+            })
+        }
+
     }
     return(
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
