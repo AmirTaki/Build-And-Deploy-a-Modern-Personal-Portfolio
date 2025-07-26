@@ -4,6 +4,9 @@ import { useState } from "react"
 
 export const ThemeToggle = () =>{
     const[isDarkMode, setIsDarkMode] = useState(false)
+    const toggleTheme = () => {
+      setIsDarkMode(isDarkMode ? false : true)
+    }
     return(
         <>
           <button>
