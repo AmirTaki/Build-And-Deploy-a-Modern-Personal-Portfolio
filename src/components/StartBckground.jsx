@@ -5,6 +5,7 @@ const StartBackground = () => {
     const [meteors, setMeteors]  = useState()
     useEffect(()=>{
         generateStarts()
+        generateMeteors()
     },[])
     const generateStarts = () =>{
         const numberOfStars = Math.floor(window.innerWidth * window.innerHeight / 10000)
@@ -26,7 +27,7 @@ const StartBackground = () => {
         const numberOfMeteors = 4
         const newMeteors =   []
         for(let i = 0; i < numberOfMeteors ; i ++){
-            newStars.push({
+            newMeteors.push({
                 id:i,
                 size : Math.random() * 2 + 1,
                 x : Math.random() * 100,
@@ -35,6 +36,7 @@ const StartBackground = () => {
                 animationDuration : Math.random() * 3 + 3,
             })
         }
+        setMeteors(newMeteors)
 
     }
     return(
