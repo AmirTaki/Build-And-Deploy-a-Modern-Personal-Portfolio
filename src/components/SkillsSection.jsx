@@ -22,6 +22,8 @@ const skills = [
     { name: "VS Code", level: 95, category: "tools" },
 ]
 
+const categories = ["all", "frontend", "backend", "tools"]
+
 const SkillsSection = () => {
     const [activeCategory, setActvieCategory] = useState("all");
     return (
@@ -31,7 +33,7 @@ const SkillsSection = () => {
                     My <span className="text-primary"> Skills</span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-4 mb-12">
-
+                    {categories.map()}
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {skills.map((skill, key) =>(
