@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import StartBackground from "@/components/StartBckground";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import HeroSection from "@/components/HeroSection";
-import AboutMe from "@/components/AboutMe";
+import AboutSection from "@/components/AboutSection";
 const Home = () => {
     return(
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden ">
@@ -15,7 +15,7 @@ const Home = () => {
             {/* Main Content */}
             <main>
                 <HeroSection />
-                <AboutMe />
+                <AboutSection />
             </main>
             {/* Footer */}
         </div>
