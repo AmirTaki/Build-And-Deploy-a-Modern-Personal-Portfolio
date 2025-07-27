@@ -30,6 +30,9 @@ const SkillsSection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     My <span className="text-primary"> Skills</span>
                 </h2>
+                <div className="flex flex-wrap justify-center gap-4 mb-12">
+
+                </div>
                 <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {skills.map((skill, key) =>(
                         <div className="bg-card p-6 rounded-lg shadow-xs card-hover" key = {key}>
