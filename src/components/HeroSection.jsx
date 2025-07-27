@@ -29,6 +29,7 @@ const HeroSection = () => {
                     Scroll
                 </span>
                 <ArrowDown className="h-5 w-5 text-primary " />
+                {/* 1:28:41 */}
             </div>
         </section>
     )
