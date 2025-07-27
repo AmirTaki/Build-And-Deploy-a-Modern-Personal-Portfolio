@@ -18,3 +18,6 @@ const Home = () => {
 }
 
 export default Home;
+
+// https://www.youtube.com/watch?v=ifOJ0R5UQOc
+//  https://github.com/machadop1407/beautiful-react-tailwind-portfolio/blob/main/src/index.css
