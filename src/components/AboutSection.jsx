@@ -48,6 +48,13 @@ const AboutSection = () =>{
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Code className="h-6 w-6 text-primary"/>
                                 </div>
+                                <div className="text-left">
+                                    <h4 className="font-semibold text-lg">Web Development</h4>
+                                    <p className="text-muted-foreground">
+                                        Creating responsive websites and web applications with
+                                        modern frameworks.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div className="gradient-border p-6 card-hover">
