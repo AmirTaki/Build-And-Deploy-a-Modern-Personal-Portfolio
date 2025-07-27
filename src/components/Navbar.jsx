@@ -31,7 +31,7 @@ const Navbar = () => {
                     </span>
                 </a>
                 {/* desktop nav */}
-                <button onClick={() => setIsMenuOpen((prev) => !prev)}>
+                <button onClick={() => setIsMenuOpen((prev) => !prev)} className="md:hidden p-2 text-foreground z-50">
                     {isMenuOpen ? <X size = {24} />:<Menu size = {24} />}
                 </button>
                 <div className="hidden md:flex space-x-8">
