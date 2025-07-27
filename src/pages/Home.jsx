@@ -15,7 +15,7 @@ const Home = () => {
             {/* Main Content */}
             <main>
                 <HeroSection />
-                <AboutSection />
+                <AboutSection/>
             </main>
             {/* Footer */}
         </div>
