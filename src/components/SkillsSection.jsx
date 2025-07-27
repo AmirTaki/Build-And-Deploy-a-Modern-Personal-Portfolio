@@ -34,7 +34,11 @@ const SkillsSection = () => {
                 </h2>
                 <div className="flex flex-wrap justify-center gap-4 mb-12">
                     {categories.map((category, key) =>(
-                        <button key = {key} className="px-5 py-2 rounded-full transition-colors duration-300 capitalize">
+                        <button 
+                            key = {key} 
+                            className="px-5 py-2 rounded-full transition-colors duration-300 capitalize"
+                            onClick={()=>setActvieCategory(category)}   
+                        >
                             {category}
                         </button>
                     ))}
