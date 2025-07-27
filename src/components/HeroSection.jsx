@@ -11,10 +11,15 @@ const HeroSection = () => {
                         <span className="text-primary opacity-0 animate-fade-in-delay-1"> {" "} Pedro</span>
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Machado</span>
                     </h1>
-                    <p>
+                    <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
                        I create stellar web experiences with modern technologies.
                        Specializing in front-end develpment, I build interfaces that are both beatiful and fucntional. 
                     </p>
+                    <div>
+                        <a href="#projects">
+                            View My Work
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
