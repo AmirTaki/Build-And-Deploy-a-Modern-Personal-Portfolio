@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const skills = [
     {name : "HTML/CSS", level : 95 , category : "frontend"},
     { name: "JavaScript", level: 90, category: "frontend" },
@@ -21,6 +23,7 @@ const skills = [
 ]
 
 const SkillsSection = () => {
+    const [activeCategory, setActvieCategory] = useState("all");
     return (
         <section id = "skills" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl">
@@ -38,8 +41,12 @@ const SkillsSection = () => {
                                     className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
                                     style = {{width : `${skill.level}%`}}
                                 >
-
                                 </div>
+                            </div>
+                            <div className="text-right  mt-1">
+                                <span className="text-sm text-muted-foreground">
+                                    {skill.level}%
+                                </span>
                             </div>
                         </div>
                     ))}
