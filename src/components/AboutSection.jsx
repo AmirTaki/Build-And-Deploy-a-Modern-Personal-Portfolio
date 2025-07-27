@@ -40,6 +40,7 @@ const AboutSection = () =>{
                             </a>
                         </div>
                     </div>
+                    <div cla></div>
                 </div>
             </div>
        </section>
