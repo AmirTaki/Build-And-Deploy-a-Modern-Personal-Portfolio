@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { cn } from "../lib/utils"
+import { Menu, X } from "lucide-react"
 
 const navItems = [
     {name : "Home", href :"#hero"},
@@ -10,7 +11,7 @@ const navItems = [
 ]
 const Navbar = () => {
     const[isScrolled, setIsScrolled] = useState(false)
-    const[isMenuOpen, setIsMenuOpen] = useState(true)
+    const[isMenuOpen, setIsMenuOpen] = useState(false)
 
     useEffect(()=>{
         const handleScroll = () =>{
@@ -30,9 +31,16 @@ const Navbar = () => {
                     </span>
                 </a>
                 {/* desktop nav */}
+                <button onClick={() => setIsMenuOpen((prev) => !prev)}>
+                    {isMenuOpen ? <X size = {24} />:<Menu size = {24} />}
+                </button>
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item, key) => (
-                        <a key = {key} herf = {item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                        <a 
+                            key = {key} 
+                            herf = {item.href} 
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                        >   
                             {item.name}
                         </a>
                     ))}
@@ -44,7 +52,12 @@ const Navbar = () => {
                 )}>
                     <div className="flex flex-col space-y-8 text-xl">
                         {navItems.map((item, key) => (
-                            <a key = {key} herf = {item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                            <a 
+                                key = {key} 
+                                herf = {item.href} 
+                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                onClick={()=>setIsMenuOpen(false)}
+                            >
                                 {item.name}
                             </a>
                         ))}
