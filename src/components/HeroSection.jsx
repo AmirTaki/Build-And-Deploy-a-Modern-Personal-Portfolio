@@ -1,3 +1,5 @@
+import { ArrowDown } from "lucide-react";
+
 const HeroSection = () => {
     return (
         <section 
@@ -26,6 +28,7 @@ const HeroSection = () => {
                 <span>
                     Scroll
                 </span>
+                <ArrowDown className="h-5 w-5 text-primary " />
             </div>
         </section>
     )
