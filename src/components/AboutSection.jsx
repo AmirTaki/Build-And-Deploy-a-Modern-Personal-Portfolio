@@ -19,6 +19,11 @@ const AboutSection = () =>{
                         techniques to stay at the forefront of the ever-evolving web
                         landscape.
                     </p>
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+                        <a href="#contact" className="cosmic-button">
+                            {" "}   Get In Touch
+                        </a>
+                    </div>
                 </div>
                 <div className="">
 
