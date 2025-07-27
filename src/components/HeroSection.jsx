@@ -15,8 +15,8 @@ const HeroSection = () => {
                        I create stellar web experiences with modern technologies.
                        Specializing in front-end develpment, I build interfaces that are both beatiful and fucntional. 
                     </p>
-                    <div>
-                        <a href="#projects">
+                    <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+                        <a href="#projects" className="cosmic-button">
                             View My Work
                         </a>
                     </div>
