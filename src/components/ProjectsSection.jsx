@@ -8,7 +8,17 @@ const projects = [
         tags: ["React", "TailwindCSS", "Supabase"],
         demoUrl: "#",
         githubUrl: "#",
-    }
+    },
+    {
+        id: 2,
+        title: "Orbit Analytics Dashboard",
+        description:
+            "Interactive analytics dashboard with data visualization and filtering capabilities.",
+        image: "/projects/project2.png",
+        tags: ["TypeScript", "D3.js", "Next.js"],
+        demoUrl: "#",
+        githubUrl: "#",
+  },
 ]
 
 
