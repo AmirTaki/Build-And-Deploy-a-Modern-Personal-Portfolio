@@ -1,8 +1,8 @@
 const ContactSection = () => {
     return(
-        <>
-            ContactSection
-        </>
+        <section id = "contact" className="py-24 px-4 relative bg-secondary/30">
+
+        </section>
     )
 }
 export default ContactSection
