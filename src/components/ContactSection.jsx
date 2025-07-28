@@ -100,7 +100,20 @@ const ContactSection = () => {
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background  focus:outline-hidden focus:ring-2 focus:ring-primary"
                                     placeholder="test@gmail.com"     
                                 />
-                            
+                            </div>
+                            <div className="">
+                                <label 
+                                    htmlFor="message"
+                                    className="block text-sm font-medium mb-2"
+                                >
+                                    Your Message</label>
+                                <textarea 
+                                    id = "message" 
+                                    name = "message"   
+                                    required 
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background  focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                                    placeholder="Hello, I'd like to talk about..."     
+                                />
                             </div>
                         </form>
                     </div>
