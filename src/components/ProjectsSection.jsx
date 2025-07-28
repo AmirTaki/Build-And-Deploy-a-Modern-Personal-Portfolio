@@ -4,7 +4,7 @@ const projects = [
         id: 1,
         title: "SaaS Landing Page",
         description: "A beautiful landing page app using React and Tailwind.",
-        image: "../../public/projects/project1.png",
+        image: "projects/project1.png",
         tags: ["React", "TailwindCSS", "Supabase"],
         demoUrl: "#",
         githubUrl: "#",
@@ -14,7 +14,7 @@ const projects = [
         title: "Orbit Analytics Dashboard",
         description:
             "Interactive analytics dashboard with data visualization and filtering capabilities.",
-        image: "../../public/projects/project2.png",
+        image: "projects/project2.png",
         tags: ["TypeScript", "D3.js", "Next.js"],
         demoUrl: "#",
         githubUrl: "#",
@@ -24,7 +24,7 @@ const projects = [
         title: "E-commerce Platform",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
-        image: "../../public/projects/project3.png",
+        image: "project3.png",
         tags: ["React", "Node.js", "Stripe"],
         demoUrl: "#",
         githubUrl: "#",
@@ -42,11 +42,15 @@ const ProjectsSection = () =>{
                 crafted with attention to detail, performance, and user experience.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, key) => {
+                {projects.map((project, key) => (
+                    
                     <div key = {key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
-                        <div className=""></div>
+                        <div className="h-48 overflow-hidden">
+                            
+                            <img src={project.image} alt="" />
+                        </div>
                     </div>
-                })}
+                ))}
             </div>
         </div>
       </section>
