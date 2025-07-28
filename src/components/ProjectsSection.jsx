@@ -1,9 +1,16 @@
 
+const projects = [
+    {
+        
+    }
+]
+
+
 const ProjectsSection = () =>{
     return(
-        <>
-            ProjectsSection
-        </>
+      <section>
+        
+      </section>
     )
 }
 
