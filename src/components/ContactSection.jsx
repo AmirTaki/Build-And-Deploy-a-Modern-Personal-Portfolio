@@ -69,7 +69,20 @@ const ContactSection = () => {
                     </div>
                     <div className="bg-card p-8 rounded-lg shadow-xs">
                         <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-                        <form action="" className="space-y-6"></form>
+                        <form action="" className="space-y-6">
+                            <div className="">
+                                <label htmlFor="name">Your Name</label>
+                                <input 
+                                    type="text" 
+                                    id = "name" 
+                                    name = "name"   
+                                    required 
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background  focus:outline-hidden focus:ring-2 focus:ring-primary"
+                                    placeholder="Amir Taki..."     
+                                />
+                            
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
