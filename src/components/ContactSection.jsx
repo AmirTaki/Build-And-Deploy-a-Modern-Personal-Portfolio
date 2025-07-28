@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Instagram, Linkedin, Mail, MapPin, Phone, Twitch, Twitter } from "lucide-react"
 
 const ContactSection = () => {
     return(
@@ -51,7 +51,20 @@ const ContactSection = () => {
                         </div>
                         <div className="pt-8">
                             <h4 className="font-medium mb-4"> Connect With Me</h4>
-                            <div className="flex space-x-4 justify-cq"></div>
+                            <div className="flex space-x-4 justify-center">
+                                <a href="">
+                                    <Linkedin />
+                                </a>
+                                <a href="">
+                                    <Twitter />
+                                </a>
+                                <a href="">
+                                    <Instagram />
+                                </a>
+                                <a href="">
+                                    <Twitch />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
