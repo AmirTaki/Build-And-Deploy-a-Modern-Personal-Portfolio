@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { cn } from "@/lib/utils"
 const skills = [
     {name : "HTML/CSS", level : 95 , category : "frontend"},
     { name: "JavaScript", level: 90, category: "frontend" },
@@ -36,7 +36,7 @@ const SkillsSection = () => {
                     {categories.map((category, key) =>(
                         <button 
                             key = {key} 
-                            className="px-5 py-2 rounded-full transition-colors duration-300 capitalize"
+                            className= {cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",)}
                             onClick={()=>setActvieCategory(category)}   
                         >
                             {category}
