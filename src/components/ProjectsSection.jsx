@@ -24,7 +24,7 @@ const projects = [
         title: "E-commerce Platform",
         description:
             "Full-featured e-commerce platform with user authentication and payment processing.",
-        image: "project3.png",
+        image: "projects/project3.png",
         tags: ["React", "Node.js", "Stripe"],
         demoUrl: "#",
         githubUrl: "#",
@@ -47,7 +47,8 @@ const ProjectsSection = () =>{
                     <div key = {key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                         <div className="h-48 overflow-hidden">
                             
-                            <img src={project.image} alt="" />
+                            <img src={project.image} alt={project.title} 
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         </div>
                     </div>
                 ))}
