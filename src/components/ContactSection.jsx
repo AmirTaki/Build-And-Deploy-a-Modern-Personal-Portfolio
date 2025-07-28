@@ -1,5 +1,5 @@
-import { Instagram, Linkedin, Mail, MapPin, Phone, Twitch, Twitter } from "lucide-react"
-
+import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitch, Twitter } from "lucide-react"
+import { cn } from "../lib/utils"
 const ContactSection = () => {
     return(
         <section id = "contact" className="py-24 px-4 relative bg-secondary/30">
@@ -115,6 +115,12 @@ const ContactSection = () => {
                                     placeholder="Hello, I'd like to talk about..."     
                                 />
                             </div>
+                            <button type = "submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2",
+
+                            )}>
+                                Send Message
+                                <Send size = {16}/>
+                            </button>
                         </form>
                     </div>
                 </div>
