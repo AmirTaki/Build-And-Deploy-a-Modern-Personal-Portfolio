@@ -43,12 +43,18 @@ const ProjectsSection = () =>{
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, key) => (
-                    
                     <div key = {key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                         <div className="h-48 overflow-hidden">
                             
                             <img src={project.image} alt={project.title} 
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        </div>
+                        <div className="p-6">
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {project.tags.map((tag) => (
+                                    <span>{tag}</span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}
