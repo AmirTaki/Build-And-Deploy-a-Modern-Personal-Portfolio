@@ -32,7 +32,7 @@ const ContactSection = () => {
                                 </div>
                                 <div className="">
                                     <h4 className="font-medium">Phone</h4>
-                                    <a href="@gamil.com" className="text-muted-foreground hover:text-primary transition-colors">
+                                    <a className="text-muted-foreground hover:text-primary transition-colors">
                                         +1 (123) 456-7890
                                     </a>
                                 </div>
@@ -43,11 +43,15 @@ const ContactSection = () => {
                                 </div>
                                 <div className="">
                                     <h4 className="font-medium">Location</h4>
-                                    <a href="@gamil.com" className="text-muted-foreground hover:text-primary transition-colors">
+                                    <a className="text-muted-foreground hover:text-primary transition-colors">
                                         Vancover, BC, Canada
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                        <div className="pt-8">
+                            <h4 className="font-medium mb-4"> Connect With Me</h4>
+                            <div className="flex space-x-4 justify-cq"></div>
                         </div>
                     </div>
                 </div>
