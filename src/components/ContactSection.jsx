@@ -1,6 +1,13 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitch, Twitter } from "lucide-react"
 import { cn } from "../lib/utils"
+import { useState } from "react"
 const ContactSection = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setTimeout(() =>{
+
+        }, 1500)
+    }
     return(
         <section id = "contact" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-atuo max-w-5xl">
