@@ -71,7 +71,11 @@ const ContactSection = () => {
                         <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
                         <form action="" className="space-y-6">
                             <div className="">
-                                <label htmlFor="name">Your Name</label>
+                                <label 
+                                    htmlFor="name"
+                                    className="block text-sm font-medium mb-2"
+                                >
+                                    Your Name</label>
                                 <input 
                                     type="text" 
                                     id = "name" 
@@ -79,6 +83,22 @@ const ContactSection = () => {
                                     required 
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background  focus:outline-hidden focus:ring-2 focus:ring-primary"
                                     placeholder="Amir Taki..."     
+                                />
+                            
+                            </div>
+                            <div className="">
+                                <label 
+                                    htmlFor="email"
+                                    className="block text-sm font-medium mb-2"
+                                >
+                                    Your Email</label>
+                                <input 
+                                    type="email" 
+                                    id = "email" 
+                                    name = "email"   
+                                    required 
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background  focus:outline-hidden focus:ring-2 focus:ring-primary"
+                                    placeholder="test@gmail.com"     
                                 />
                             
                             </div>
