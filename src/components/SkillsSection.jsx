@@ -36,7 +36,9 @@ const SkillsSection = () => {
                     {categories.map((category, key) =>(
                         <button 
                             key = {key} 
-                            className= {cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",)}
+                            className= {cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                                activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary"
+                            )}
                             onClick={()=>setActvieCategory(category)}   
                         >
                             {category}
