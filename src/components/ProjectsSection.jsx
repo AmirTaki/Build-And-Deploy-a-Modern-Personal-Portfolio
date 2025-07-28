@@ -1,4 +1,4 @@
-import s from ""
+
 const projects = [
     {
         id: 1,
@@ -34,8 +34,10 @@ const projects = [
 
 const ProjectsSection = () =>{
     return(
-      <section>
-        
+      <section id = "projects" className="py-24 px-4 relative">
+        <div className="container mx-auto max-w-5xl">
+            <h2>Featured <span className="text-primary">Projects</span></h2>
+        </div>
       </section>
     )
 }
