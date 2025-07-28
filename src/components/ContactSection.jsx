@@ -1,7 +1,11 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitch, Twitter } from "lucide-react"
 import { cn } from "../lib/utils"
 import { useState } from "react"
+import {useToast} from "@/hooks/use-toast"
+
+
 const ContactSection = () => {
+    const {toast} = useToast ()
     const handleSubmit = (e) => {
         e.preventDefault()
         setTimeout(() =>{
