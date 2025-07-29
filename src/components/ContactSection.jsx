@@ -7,6 +7,7 @@ import { Description } from "@radix-ui/react-toast"
 
 const ContactSection = () => {
     const {toast} = useToast ()
+    const [isSubmitting, setIsSubmitting] = useState*(false)
     const handleSubmit = (e) => {
         e.preventDefault()
         setTimeout(() =>{
