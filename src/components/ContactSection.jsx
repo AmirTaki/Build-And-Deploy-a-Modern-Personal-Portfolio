@@ -2,6 +2,7 @@ import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitch, Twitter } from 
 import { cn } from "../lib/utils"
 import { useState } from "react"
 import {useToast} from "@/hooks/use-toast"
+import { Description } from "@radix-ui/react-toast"
 
 
 const ContactSection = () => {
@@ -9,7 +10,10 @@ const ContactSection = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setTimeout(() =>{
-
+            toast({
+                title : "Message sent!",
+                description : "Thank you for your message. I'll get back to you soon.",
+            })
         }, 1500)
     }
     return(
