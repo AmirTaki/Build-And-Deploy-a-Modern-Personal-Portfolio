@@ -7,8 +7,10 @@ import { Description } from "@radix-ui/react-toast"
 
 const ContactSection = () => {
     const {toast} = useToast ()
-    const [isSubmitting, setIsSubmitting] = useState*(false)
+    const [isSubmitting, setIsSubmitting] = useState(false)
+
     const handleSubmit = (e) => {
+        isSubmitting(true)
         e.preventDefault()
         setTimeout(() =>{
             toast({
@@ -16,6 +18,7 @@ const ContactSection = () => {
                 description : "Thank you for your message. I'll get back to you soon.",
             })
         }, 1500)
+        isSubmitting(false)
     }
     return(
         <section id = "contact" className="py-24 px-4 relative bg-secondary/30">
@@ -134,10 +137,13 @@ const ContactSection = () => {
                                     placeholder="Hello, I'd like to talk about..."     
                                 />
                             </div>
-                            <button type = "submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2",
+                            <button 
+                                disabled = {isSubmitting}
+                                type = "submit" 
+                                className={cn("cosmic-button w-full flex items-center justify-center gap-2",
 
                             )}>
-                                Send Message
+                                {isSubmitting ? "Sending..." : "Send Message"}
                                 <Send size = {16}/>
                             </button>
                         </form>
